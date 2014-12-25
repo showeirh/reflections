@@ -1,0 +1,45 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+    Fill in your answer here
+    Examined the added lines in the modified file, and looked for suspicious entries.
+
+How could having easy access to the entire history of a file make you a better programmer in the long term?
+
+    Fill in your answer here
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+    
+    Fill in your answer here
+    pros:
+         The repository will appreciate using Git correctly and efficiently.
+
+    cons: 
+          One might end up with a diary of a working day.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+    Fill in your answer here
+    Unlike Google Docs, Git is aware that some files could form a software package. On the other hand, Google Docs expects files of an office suite.
+
+How can you use the commands git log and git diff to view the history of files?
+    
+    Fill in your answer here
+    git log command displays the commits log, one page at a time.
+    git diff <ID> <ID> displays the changes between those commits. 
+
+How might using version control make you more confident to make changes that could break something?
+    
+    Fill in your answer here
+    By commiting version/s that are good, and inspecting for changes to a bugged one. Or commit outside of branches, and if I like what I've done, I'll tag the commit or merge it.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
+    At some point of time, during the course or afterwords, I'll initialze repositories for programs on my labtop.
+
+How could having easy access to the history of a file make you a more efficient programmer in the ling term?
+
+	Answer:
+	For writing a program code, there are two  main objectives: correct semantic and efficiency. Once a right output is achieved, the following stage is mainly to optimize the program. Unlike semantic, optimization is the name of the game. 
+	A learning programmer, examining the history of a project, could efficiently follow the tweaks made to the program and would develop an instrument for segments of codes.
+    Also a programmer can easily find newly added materials in a database, say a library in a programming language.
