@@ -1,0 +1,23 @@
+1- What happens when you initialize a repository? Why do you need to do it?
+   
+    Git creats a /.git directory to store the project's metadata and objects database. The repository initially contains four subdirectories:
+     /hooks - for output massages;
+     /info - exclude list
+     /objects - contains the objects database
+     /refs - stores the heads and tags.
+    three files:
+     config - project-specific configyration options
+     description - used by Git-web program
+     HEAD  - the guy who will walk the walk
+
+   Initializing Git gets it ready to track files.
+
+2- How is the staging area different from the working directory and the 
+   repository? What value do you think it offers?
+
+    The staging area is an intermediate space that holds objects to be commited. The working directory resides the projects and the repository is where the database is archived.  
+
+
+  
+
+
