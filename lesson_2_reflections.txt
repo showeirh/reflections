@@ -40,4 +40,10 @@
      With branches, one can create new lines of developments whether for 
      experimentations or for different features, etc.
      
-     
+5- How do the diagrams help you visualize the branch structure?
+
+     Before working on the WHO, WHEN, WHAT of the log, it is much better to draw a diagram, for more than one-branch repository, so as to save driving the head crazy.
+
+
+
+
