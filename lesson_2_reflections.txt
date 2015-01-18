@@ -44,6 +44,11 @@
 
      Before working on the WHO, WHEN, WHAT of the log, it is much better to draw a diagram, for more than one-branch repository, so as to save driving the head crazy.
 
+6-  What is the result of merging two branches together? Why do we represent   
+    it in the diagram the way we do?
 
+      When two branches are merged: the commits of both are serialized in the
+      log chronologically, thus the logical connection between commits is lost--
+      that is a given commit is not necessarily the parent of the previous one. Another result is that all commits are reachable from a single branch, which is the main purpose for merging.
 
-
+      What happens is that the tip of each branch becomes a parent to the newly created commit. Thus the diagram is drawn branched out.
