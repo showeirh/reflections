@@ -1,0 +1,3 @@
+When would you want to create a remote repository rather then kepping all your work local?
+
+  I would create a remote repo if I want to collaborate with other developers on the project.
