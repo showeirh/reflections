@@ -1,6 +1,6 @@
 1- What happens when you initialize a repository? Why do you need to do it?
    
-    Git creates a /.git directory to store the project's metadata and objects database. The repository initially contains four subdirectories:
+    When a repo is initialized, Git creates a /.git directory to store the project's metadata and objects database. The repository initially contains four subdirectories:
      /hooks - for output massages;
      /info - exclude list
      /objects - contains the objects database
@@ -15,14 +15,15 @@
 2- How is the staging area different from the working directory and the 
    repository? What value do you think it offers?
 
-    The staging area is an intermediate space that holds objects to be committed. The working directory resides the projects and the repository is where the project database is archived.  
+    The staging area is an intermediate space that holds objects to be committed. The working directory resides the projects and the repository is where the project database is archived.
 
-    Staging a file, Git processes it for commit. Staging offers control over segmenting the project's process for efficiency and organizational purposes, i.e. one logical change per commit per file per Add.  
+    Files in the working directory are unpacked, while files in the index and in the repo are checksummed and stored as key-value SHA1.
 
-3- How can you use the staging area to make sure you have one commit per
-   logical change ?
+    Staging a file, Git processes it for committing. Staging offers control over segmenting the project's process for efficiency and organizational purposes, i.e. one logical change per commit per file per Add.
 
-     Examine the changes made to the repository via $ git diff --staged command. If all changes fall into one patch, great, may proceed.
+3- How can you use the staging area to make sure you have one commit per logical change?
+
+     To examine the changes made to the repository, compare the file in the index vs. the current commit via $ git diff --staged command. If all changes fall into one patch, great, may proceed.
 
 4- What are some situations when branches would be helpful in keeping your 
    history organized? How would branches help?
@@ -42,13 +43,21 @@
      
 5- How do the diagrams help you visualize the branch structure?
 
-     Before working on the WHO, WHEN, WHAT of the log, it is much better to draw a diagram, for more than one-branch repository, so as to save driving the head crazy.
+     Before working on the WHO, WHEN, WHAT of the log, it is much better to draw a diagram, for a more than one-branch repository, so as to save driving the head crazy. As the diagram should help to track which branch contains which commits.
 
-6-  What is the result of merging two branches together? Why do we represent   
-    it in the diagram the way we do?
+6-  What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
       When two branches are merged: the commits of both are serialized in the
       log chronologically, thus the logical connection between commits is lost--
       that is a given commit is not necessarily the parent of the previous one. Another result is that all commits are reachable from a single branch, which is the main purpose for merging.
 
       What happens is that the tip of each branch becomes a parent to the newly created commit. Thus the diagram is drawn branched out.
+
+7-  What are the pros and cons of Git’s automatic merging vs.
+    always doing merges manually?
+
+       When two branches are to be merged, Git is configured to do two operations: 1- assign a common base for the merged files to serve as the original against which Git compares for conflicts; 2- if Git finds any conflict in the files, it renders the operation to the committer, unless otherwise specified via different merge arguments, to solve conflicts manually.
+
+       Therefore, if you know in advance which hunk to be included in the new file, that's fine, go ahead with pre-supplied merge arguments, and the committer will save time and avoids errors prone in manual merging.
+
+       In case that the conflict solving overlap, Git continuing with its 'nothing-is-lost' line, renders control to the committer to solve this conflict manually. Hereby a consensus is reached and the upgrade is correctly achieved.
