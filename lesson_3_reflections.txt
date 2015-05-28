@@ -1,4 +1,4 @@
-1- When would you want to create a remote repository rather then kepping all your work local?
+1- When would you want to create a remote repository rather than keeping all your work local?
 
      I would create a remote repo if I want to collaborate with other developers on the project.
 
@@ -10,6 +10,6 @@
 
      Forks: is a Github feature where you copy a hosted repo into your remote repo on Github-- that is to diverge from the original repo, which allows one to do his own work on the forked repo.
 
-     Clone: is to make a copy of the original repo either from Github to ypur local repo or from your local to another spot in the same machine.
+     Clone: is to make a copy of the original repo either from Github to your local repo or from your local to another spot in the same machine.
 
      Branches: is a commit/repo feature where you diverge your line of development.
