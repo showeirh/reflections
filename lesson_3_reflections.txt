@@ -13,3 +13,7 @@
      Clone: is to make a copy of the original repo either from Github to your local repo or from your local to another spot in the same machine.
 
      Branches: is a commit/repo feature where you diverge your line of development.
+
+4- What is the benefit of having a copy of the last known state of the remote stored locally?
+
+	 Being in sync with the remote repo is what Git is all about-- a distributed version control system. Developers will have the benefits of working while off-line and push later on. Also if things were screwed up on any machine, a developer can clone back repos from other remotes.
