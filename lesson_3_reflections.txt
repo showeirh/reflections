@@ -17,3 +17,7 @@
 4- What is the benefit of having a copy of the last known state of the remote stored locally?
 
 	 Being in sync with the remote repo is what Git is all about-- a distributed version control system. Developers will have the benefits of working while off-line and push later on. Also if things were screwed up on any machine, a developer can clone back repos from other remotes.
+
+5- How would you collaborate without using Git or Github? What would be easier, and what would be harder?
+
+     Other than using a repository hosting service, collaboration is best done with a middle host between collaborators for code sharing. Such a middle host could be emails where code could be sent and received, but definitely would be unprofessional, slower, and harder than Github. I cannot really suggest an easier and more professional way for code review other than Github.
