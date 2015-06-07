@@ -21,3 +21,7 @@
 5- How would you collaborate without using Git or Github? What would be easier, and what would be harder?
 
      Other than using a repository hosting service, collaboration is best done with a middle host between collaborators for code sharing. Such a middle host could be emails where code could be sent and received, but definitely would be unprofessional, slower, and harder than Github. I cannot really suggest an easier and more professional way for code review other than Github.
+
+6- When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+     I would diverge from master branch when I'm doing experimental changes to a project. Then, I'll merge the new branch into master when I'm all set. That way I'll keep the master branch clean and in order. I don't see any benefits in doing experimental changes in the master branch.
